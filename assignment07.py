@@ -1,6 +1,7 @@
 print("Welcome to Birthday Party Planner!\n")
 
 # Initialize the Guest List
+players = ["Adam", "Sam", "Johnny", "Smith", "Jack", "John", "William", "Tanner"]
 
 
 # Functions
