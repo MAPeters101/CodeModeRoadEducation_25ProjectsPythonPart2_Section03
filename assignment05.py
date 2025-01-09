@@ -9,7 +9,6 @@ while True:
     player = input("Please enter the name of a player: ")
     # Add the player's name to the 'players' list
     players.append(player)
-    print(players)
 
     # Check if the user wants to stop entering names. If so, break from the loop
     ans = input("Would you like to stop entering names? ").upper()
@@ -40,7 +39,6 @@ while True:
             players.remove(player)
         else:
             print(f"{player} is not in the group.")
-    print(players)
 
     # Ask the user if there are more changes
     ans = input("Are there more changes to be made (No to exit)? ").upper()
@@ -49,4 +47,3 @@ while True:
         break
 
 print("Gaming Lobby Management Program has ended.")
-print(players)
