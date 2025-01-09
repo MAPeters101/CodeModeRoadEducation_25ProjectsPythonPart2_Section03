@@ -30,13 +30,18 @@ while True:
     action = input("Do you want to 'add', 'remove', 'display', or 'stop'? ")
 
     if action.lower() == "add":
-    # Ask for the guest name, and then call the add_guest function
+        # Ask for the guest name, and then call the add_guest function
+        name = input("Please enter the guest's name: ")
+        add_guest(name)
 
     elif action.lower() == "remove":
-    # Ask for the guest name, and then call the remove_guest function
+        # Ask for the guest name, and then call the remove_guest function
+        name = input("Please enter the guest's name: ")
+        remove_guest(name)
 
     elif action.lower() == "display":
-    # Call the display_guests function
+        # Call the display_guests function
+        display_guests()
 
     elif action.lower() == "stop":
         break
