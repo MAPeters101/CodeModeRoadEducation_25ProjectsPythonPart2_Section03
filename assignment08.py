@@ -20,11 +20,11 @@ def guess_the_phrase(phrase):
         if user_guess in phrase and user_guess not in guessed_words:
             guessed_words.append(user_guess)
             print("Congratulations! You guessed a correct word.")
-            print(display_phrase(phrase_to_guess, guessed_words))  # Inside, call the display_phrase function
+            print(display_phrase(phrase_to_guess, guessed_words))
         else:
             incorrects -= 1
             print(f"Incorrect guess. Incorrects left: {incorrects}")
-            print(display_phrase(phrase_to_guess, guessed_words))  # Inside, call the display_phrase function
+            print(display_phrase(phrase_to_guess, guessed_words))
 
         if len(guessed_words) == len(phrase_to_guess):
             print("CONGRATULATIONS!! You guessed the phrase!")
@@ -36,5 +36,5 @@ def guess_the_phrase(phrase):
 
 
 # Main Program
-phrase_to_guess = ["I", "am", "really", "enjoying", "learning", "to", "program", "in", "python"]  # Add a bunch of random words that form a sentence
+phrase_to_guess = ["I", "am", "really", "enjoying", "learning", "to", "program", "in", "python"]
 guess_the_phrase(phrase_to_guess)
